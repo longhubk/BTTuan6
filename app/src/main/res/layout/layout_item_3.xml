@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+                android:layout_width = "match_parent"
+                android:padding="5dp"
+                android:layout_height = "match_parent">
+
+	<ImageView android:layout_width = "60dp"
+	           android:id="@+id/image_avatar"
+	           android:visibility="gone"
+	           android:src="@drawable/wall1"
+	           android:layout_height = "60dp"/>
+	
+	<TextView android:layout_width = "60dp"
+	          android:background="@drawable/round_background"
+	          android:text="T"
+	          android:textColor="#FFFFFF"
+	          android:gravity="center"
+	          android:layout_marginRight="8dp"
+	          android:layout_marginLeft="5dp"
+	          android:textSize="30sp"
+	          android:id="@+id/text_round"
+	          android:layout_height = "60dp"/>
+	
+	<ImageView android:layout_width = "wrap_content"
+	           android:src="@drawable/sign_mark"
+	           android:id="@+id/sign_mark"
+	           android:layout_toRightOf="@id/text_round"
+	           android:layout_height = "wrap_content"/>
+	
+	<TextView android:layout_width = "180dp"
+	          android:id="@+id/text_fullname"
+	          android:textSize="20dp"
+	          android:text="full name"
+	          android:layout_alignTop="@id/text_round"
+	          android:gravity="left"
+	          android:layout_toRightOf="@id/sign_mark"
+	          android:layout_height = "wrap_content"/>
+	
+	<TextView android:layout_width = "240dp"
+	          android:layout_toRightOf="@id/text_round"
+	          android:id="@+id/sub_name"
+	          android:text="This is sub name"
+	          android:textSize="14sp"
+	          android:layout_alignBottom="@+id/text_round"
+	          android:layout_height = "33dp"/>
+	
+	<TextView android:layout_width = "wrap_content"
+	          android:id="@+id/text_time"
+	          android:layout_above="@id/image_favorite"
+	          android:layout_alignParentRight="true"
+	          android:text="12:34 PM"
+	          android:textSize="16dp"
+	          android:layout_height = "wrap_content"/>
+	
+	<ImageView android:layout_width = "wrap_content"
+	           android:id = "@+id/image_favorite"
+	           android:src = "@drawable/ic_star_none_favourite"
+	           android:layout_alignParentRight = "true"
+	           android:layout_alignBottom="@+id/sub_name"
+	           android:layout_marginBottom="5dp"
+	           android:layout_marginTop="5dp"
+	           android:layout_height = "wrap_content"
+	           android:layout_marginRight = "15dp" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+                android:layout_width = "match_parent"
+                android:padding="5dp"
+                android:layout_height = "match_parent">
+
+	<ImageView android:layout_width = "60dp"
+	           android:id="@+id/image_avatar"
+	           android:src="@drawable/wall1"
+	           android:layout_height = "60dp"/>
+	<TextView android:layout_width = "wrap_content"
+	          android:id="@+id/text_fullname"
+	          android:textSize="28dp"
+	          android:text="full name"
+	          android:layout_marginLeft="5dp"
+	          android:layout_alignTop="@id/image_avatar"
+	          android:layout_alignBottom="@id/image_avatar"
+	          android:gravity="center"
+	          android:layout_toRightOf="@id/image_avatar"
+	          android:layout_height = "wrap_content"/>
+	
+	<CheckBox android:layout_width = "wrap_content"
+	          android:id="@+id/chk_select"
+	          android:layout_alignParentRight="true"
+	          android:layout_height = "wrap_content"/>
+</RelativeLayout>
